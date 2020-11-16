@@ -1,0 +1,11 @@
+grammar Compilador;
+
+programa : classe* EOF ;
+
+classe : 'data' 'class' nome=ID '(' var (',' var)* ')' ';' ;
+
+var : tipo=ID nome=ID ;
+
+ID : [a-zA-Z][a-zA-Z0-9]* ;
+
+SPACE : (' ' | '\n' | '\t') -> skip ;

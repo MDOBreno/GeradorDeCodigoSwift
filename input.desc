@@ -1,0 +1,3 @@
+data class Pessoa(String nome, String endereco, int idade);
+
+data class Ponto(float x , float y, float z);
